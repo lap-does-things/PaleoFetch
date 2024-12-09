@@ -27,3 +27,5 @@ pip install -r requirements.txt
 python main.py
 ```
 
+## Credits
+. Pearu Peterson <pearu@cens.ioc.ee> for cpuinfo.
