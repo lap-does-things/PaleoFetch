@@ -4,7 +4,7 @@
 
 Since "Neo" in NeoFetch stands for "new", this would be PaleoFetch - an ancient CLI for ricing
 
-![Banner](https://i.imgur.com/te3ky9A.png)
+![Banner](https://i.imgur.com/XQYteYS.png)
 
 
 ## Usage
