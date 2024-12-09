@@ -7,6 +7,8 @@ Since "Neo" in NeoFetch stands for "new", this would be PaleoFetch - an ancient 
 ![Banner](https://i.imgur.com/XQYteYS.png)
 
 
+**Only support Windows and Linux, may support other platforms like Java if applicable logo is added**
+
 ## Usage
 
 1. Clone the repo
