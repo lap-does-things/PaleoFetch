@@ -9,7 +9,7 @@ import GPUtil
 gpuspec = GPUtil.getGPUs()
 init()
 
-defaultstyle = Fore.BLUE + Style.BRIGHT + Back.BLACK
+defaultstyle = Fore.BLUE + Style.NORMAL + Back.BLACK
 # стиль логотипа!!
 
 windll.kernel32.SetConsoleTitleW("PaleoFetch") ## Ставим название консоли
@@ -92,7 +92,6 @@ ram = psu.virtual_memory().total // (1024 ** 3) # RANDOM ACCESS MEMORIES REFEREN
 imf = pt.uname()
 svmem = psu.virtual_memory()
 swap = psu.swap_memory()
-print(imf)
 sleep(0.2)
 #sys = "Linux" - - Дебаг
 
@@ -124,4 +123,4 @@ system('cls' if name == 'nt' else 'clear')
 for i in sex:
     print(i, flush=True,end='')
     sleep(0.001)
-#print()
+print("")
