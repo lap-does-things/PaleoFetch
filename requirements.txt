@@ -1,3 +1,4 @@
 colorama
 GPUtil
 psutil
+setuptools

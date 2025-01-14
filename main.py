@@ -8,10 +8,8 @@ import cpuinfo
 import GPUtil
 gpuspec = GPUtil.getGPUs()
 init()
-
 defaultstyle = Fore.BLUE + Style.NORMAL + Back.BLACK
 # стиль логотипа!!
-
 windll.kernel32.SetConsoleTitleW("PaleoFetch") ## Ставим название консоли
 #Объявляем лого для графика
 logo = {
@@ -25,7 +23,7 @@ logo = {
  MMMMMMMMMMMMMM  MMMMMMMMMMMMMMMMMMM
  MMMMMMMMMMMMMM  MMMMMMMMMMMMMMMMMMM
  MMMMMMMMMMMMMM  MMMMMMMMMMMMMMMMMMM
- 
+
  MMMMMMMMMMMMMM  MMMMMMMMMMMMMMMMMMM
  MMMMMMMMMMMMMM  MMMMMMMMMMMMMMMMMMM
  MMMMMMMMMMMMMM  MMMMMMMMMMMMMMMMMMM
@@ -60,30 +58,28 @@ logo = {
                     ▔▔▔▔▔▔▔
     """,
     'Linux': r"""
-         $$$$$$$        
-        $$$$$$$$$       
-        $$$$$$$$$$      
-       $$   $   $$      
-       $$/o$o\$$$$      
-        $////$$$$$$     
-        <<<<<$$$$$$     
-        $......$$$$$    
-       $........$$$$$$  
-       $.........$$$$$$ 
+         $$$$$$$
+        $$$$$$$$$
+        $$$$$$$$$$
+       $$   $   $$
+       $$/o$o\$$$$
+        $////$$$$$$
+        <<<<<$$$$$$
+        $......$$$$$
+       $........$$$$$$
+       $.........$$$$$$
        $.........$$$$$$$
       $..........$$$$$$$
      $$..........$$$$$$$
      $$$........$$$$$$$$
    $$$$$.......$$$$$$$$$
  $$$$$$$......$$$$$$$$$$
- $$$$$$......$$$$$$$$$$ 
-   $$$        $$$$$$$$  
+ $$$$$$......$$$$$$$$$$
+   $$$        $$$$$$$$
     """
 }
-
 #Получаем инфу о системе
 #Если ты это читаешь, лпе тебя ебал кста)
-
 sys = pt.system() # Linux, Windows, Java, etc
 arch = pt.architecture()[0] # x64\x86
 cpu = pt.processor() # истинное имя проца
@@ -94,8 +90,6 @@ svmem = psu.virtual_memory()
 swap = psu.swap_memory()
 sleep(0.2)
 #sys = "Linux" - - Дебаг
-
-
 # Строим ультимативную строку Секса!!!!
 sex = defaultstyle+logo.get(sys).splitlines()[0] + Fore.WHITE+" Welcome to PaleoFetch!! Like NeoFetch, but like... ancient idk"+ "\n"
 sex += defaultstyle+logo.get(sys).splitlines()[1] + Fore.CYAN+"     System: " + Fore.WHITE + pt.system() +" "+ pt.release() +" "+ pt.win32_edition()+ "\n"
@@ -115,11 +109,8 @@ sex += defaultstyle+logo.get(sys).splitlines()[14]+"     " + Back.LIGHTRED_EX + 
 sex += defaultstyle+logo.get(sys).splitlines()[15] + "\n"
 sex += defaultstyle+logo.get(sys).splitlines()[16] + "\n"
 sex += defaultstyle+logo.get(sys).splitlines()[17] + Fore.CYAN+"     User: " + Fore.GREEN +pt.node()+ " aka " + psu.users()[0][0]+"\n"
-
 # Красивый принт потому что хочу =)
-
 system('cls' if name == 'nt' else 'clear')
-
 for i in sex:
     print(i, flush=True,end='')
     sleep(0.001)
